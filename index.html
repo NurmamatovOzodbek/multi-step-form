@@ -9,5 +9,62 @@
   <script defer src="./js/main.js"></script>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="tab__links">
+      <div class="tab__link">
+        <div class="oval active">1</div>
+        <div class="tab__name">
+          <span>step 1</span>
+          <strong>YOUR INFO</strong>
+        </div>
+      </div>
+      <div class="tab__link">
+        <div class="oval">2</div>
+        <div class="tab__name">
+          <span>step 2</span>
+          <strong>SELECT PLAN</strong>
+        </div>
+      </div>
+      <div class="tab__link">
+        <div class="oval">3</div>
+        <div class="tab__name">
+          <span>step 3</span>
+          <strong>ADD-ONS</strong>
+        </div>
+      </div>
+      <div class="tab__link">
+        <div class="oval">4</div>
+        <div class="tab__name">
+          <span>step 4</span>
+          <strong>SUMMARY</strong>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="tab__contents">
+        <div class="tab__content step__one">
+          <div class="tab__about">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+          </div>
+          <form action="#" id="form">
+            <div class="inputs">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="e.g. Stephen King">
+            </div>
+            <div class="inputs">
+              <label for="name">Email address</label>
+              <input type="text" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
+            </div>
+            <div class="inputs">
+              <label for="name">Phone Number</label>
+              <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890">
+            </div>
+          </form>
+        </div>
+      </div>
+      <button>Next Step</button>
+    </main>
+  </div>
 </body>
 </html>
