@@ -6,7 +6,166 @@
   box-sizing: border-box;
 }
 body{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  background: #EFF5FF;
+}
+.wrapper{
+  width: 100%;
+  max-width: 940px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding: 16px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+  .tab__links{
+    width: 100%;
+    max-width: 274px;
+    height: 568px;
+    background-image: url(../img/bg-sidebar-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding: 40px 32px;
+    .tab__link{
+      width: 100%;
+      max-width: 153px;
+      display: flex;
+      column-gap: 16px;
+      // justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      .oval{
+        width: 33px;
+        height: 33px;
+        border-radius: 100%;
+        border: 1px solid white;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        &.active{
+          color: black;
+          background: #BEE2FD;
+        }
+      }
+      .tab__name{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        span{
+          color: #ABBCFF;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        strong{
+          color:#FFF;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  main{
+    width: 100%;
+    padding: 40px 100px 16px 84px;
+    height: 568px;
+    // background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    .tab__contents{
+      width: 100%;
+      max-width: 450px;
+      .step__one{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        .tab__about{
+          display: flex;
+          flex-direction: column;
+          gap: 11px;
+          h1{
+            font-size: 32px;
+            font-weight: 700;
+            color: #022959;
+          }
+          p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #9699AA;
+          }
+        }
+        form{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          .inputs{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            label{
+              font-size: 14px;
+              font-weight: 400;
+              color: #022959;
+            }
+            input{
+              width: 100%;
+              border-radius: 8px;
+              border: 1px solid #D6D9E6;
+              background: #FFF;
+              padding: 12px 16px;
+              outline: none;
+              &::placeholder{
+                color:#9699AA;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    button{
+      padding: 15px 25px;
+      border-radius: 8px;
+      background: #022959;
+      border: none;
+      user-select: none;
+      cursor: pointer;
+
+      color:#FFF;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover{
+        background: #164A8A;
+      }
+    }
+  }
 }

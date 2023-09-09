@@ -6,7 +6,160 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
+  background: #EFF5FF;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 940px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.1);
+}
+.wrapper .tab__links {
+  width: 100%;
+  max-width: 274px;
+  height: 568px;
+  background-image: url(../img/bg-sidebar-desktop.svg);
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding: 40px 32px;
+}
+.wrapper .tab__links .tab__link {
+  width: 100%;
+  max-width: 153px;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  user-select: none;
+}
+.wrapper .tab__links .tab__link .oval {
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+.wrapper .tab__links .tab__link .oval.active {
+  color: black;
+  background: #BEE2FD;
+}
+.wrapper .tab__links .tab__link .tab__name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.wrapper .tab__links .tab__link .tab__name span {
+  color: #ABBCFF;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.wrapper .tab__links .tab__link .tab__name strong {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.wrapper main {
+  width: 100%;
+  padding: 40px 100px 16px 84px;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrapper main .tab__contents {
+  width: 100%;
+  max-width: 450px;
+}
+.wrapper main .tab__contents .step__one {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.wrapper main .tab__contents .step__one .tab__about {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.wrapper main .tab__contents .step__one .tab__about h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #022959;
+}
+.wrapper main .tab__contents .step__one .tab__about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #9699AA;
+}
+.wrapper main .tab__contents .step__one form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.wrapper main .tab__contents .step__one form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wrapper main .tab__contents .step__one form .inputs label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #022959;
+}
+.wrapper main .tab__contents .step__one form .inputs input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #D6D9E6;
+  background: #FFF;
+  padding: 12px 16px;
+  outline: none;
+}
+.wrapper main .tab__contents .step__one form .inputs input::placeholder {
+  color: #9699AA;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.wrapper main button {
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: #022959;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+.wrapper main button:hover {
+  background: #164A8A;
 }/*# sourceMappingURL=style.css.map */
